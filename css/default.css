@@ -2,9 +2,85 @@
 /* CSS Document */
 html {
 width: 1024px;
+text-align:center;
+margin:0 auto;
+background-color:#000000;
 }
 
 header {
 text-align: center;
 }
 
+iframe#header{
+z-index:10;
+border:none;
+height:300px;
+width:100%;
+}
+
+.footer{
+margin-top:100px;
+text-align:left;
+color:#FFFFFF;
+}
+
+div#homeSlider {
+   background: #000;
+   border: 5px solid #eaeaea;
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+   height: 183px;
+   width: 275px;
+   margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+}
+
+div#maskSlider{
+	overflow: hidden;
+	height: 183px;
+    width: 1651px;
+}
+
+div#maskSlider img{
+	margin: 0; padding: 0;
+	float:left;
+}
+
+@keyframes cycle {
+	20% { left: -275%; }
+	40% { left: -40%; }
+	60% { left: -60%; }
+	80% { left: -80%; }
+	100% { left: -100%; }
+}
+
+@-webkit-keyframes cycle {
+	20% { left: -275px; }
+	40% { left: -551px; }
+	60% { left: -827px; }
+	80% { left: -1102px; }
+	100% { left: -1377px; }
+}
+
+@-moz-keyframes cycle {
+	20% { left: -20%; }
+	40% { left: -40%; }
+	60% { left: -60%; }
+	80% { left: -80%; }
+	100% { left: -100%; }
+}
+
+
+div#homeSlider img{
+	position: relative;
+	margin: 0; padding: 0; font-size: 0; left: 0;
+	animation: 10s cycle infinite;
+	-webkit-animation: 10s cycle infinite;
+    -moz-animation: 10s cycle infinite;
+}
+
+div#maskSlider:hover img {
+	animation: none;
+	-webkit-animation-play-state: paused;
+    -moz-animation: stop;
+}
