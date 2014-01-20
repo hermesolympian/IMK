@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/registration.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MAKEUP HOUSE</title>
+</head>
+
+<body>
+<div style="background-image:url(Assets/Logo.png); width:1024px;height:180px;">
+	<ul id="MenuBar1" class="MenuBarHorizontal">
+	  <li><a href="home.html">Home</a></li>
+	  <li><a href="tips.html">Beauty Tips</a></li>
+	  <li><a class="MenuBarItemSubmenu" href="#">Product</a>
+	      <ul>
+	        <li><a href="product.html#Skin Care">Skin Care</a></li>
+	        <li><a href="product.html#Makeup">Makeup</a></li>
+        </ul>
+      </li>
+	  <li><a href="about.html">AboutUs</a></li>
+	  <li><a href="registration.html">Registration</a></li>
+  </ul>
+  <br/><br/><br/><br/><br/><br/><br/>
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration</h2>
+</div>
+<div class="content">
+<form action="sucess.html" method="post">
+<table class="registration" border="0">
+	<tr>
+		<td><label>Username</label></td><td>:</td>
+		<td><input type="text" name="usrusrName" placeholder="Username"></td>
+	</tr>
+	<tr>
+		<td><label>Password</label></td><td>:</td>
+		<td><input type="password" name="pwd" placeholder="Password"></td>
+	</tr>
+	<tr>
+		<td><label>Verify Password</label></td><td>:</td>
+		<td><input type="password" name="verpwd" placeholder="Verify password"></td>
+	</tr>
+	<tr>
+		<td><label>Name</label></td><td>:</td>
+		<td><input type="text" name="usrName" placeholder="Full name"></td>
+	</tr>
+	<tr>
+		<td><label>Gender</label></td><td>:</td>
+		<td>&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Male">Male <input type="radio" name="gender" value="Female">Female</td>
+	</tr>
+	<tr>
+		<td><label>Birthdate</label></td><td>:</td>
+		<td><input type="date" id="datepicker" name="bdate"></td>
+	</tr>
+	<tr>
+		<td><label>Birthplace</label></td><td>:</td>
+		<td><input type="text" name="birthplace" placeholder="      Birthplace"></td>
+	</tr>
+	<tr>
+		<td><label>Email</label></td><td>:</td>
+		<td><input type="text" name="usrmail" placeholder="Email"></td>
+	</tr>
+	<tr>
+		<td><label>Address</label></td><td>:</td>
+		<td><textarea name="address" placeholder="Address"></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2"><label>Term & Condition</label></td><td>:</td>
+	</tr>
+	<tr rowspan="2">
+		<td colspan="3"><label>We will keep your personal data safe. The information only used for us to know you more and recovery password need.</label></td>
+	</tr>
+	<tr align="center">
+		<td colspan="3"><input type="checkbox" name="agree"/>I agree with Term & Condition</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center"><input type="submit" id="signup" name="signup" value="Sign Up"/>&nbsp;&nbsp;&nbsp;<input type="reset" id="reset" name="reset" value="Reset"/></td>
+	</tr>
+</table>
+</form>
+</div>
+<div class="footer">
+&nbsp;&nbsp;frgunawan &copy; Binus University 2014
+</div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>
