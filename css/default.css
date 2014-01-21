@@ -143,12 +143,23 @@ div .thanksLetter{
 div .thanksLetter a{
     color:#e3b025;
 }
-.imageLocation {
-    width:459px;
-	height:420px;
-    margin-left: 300px;
-    background-image:url("../Assets/location2.png");
+
+div.footer img.clock{
+	width:80px;
+	float:right;
+	padding-right:100px;
+	padding-bottom: 15px;
 }
-.imageLocation:hover{
-	background-image:url("../Assets/location.png");
+
+div.footer img.facebook{
+	width:50px;
+	padding-left:50px;
+}
+
+div.toTop{
+	width:50px;
+	height:80px;
+	float:right;
+	position:fixed;
+	margin-left: 800px;
 }
